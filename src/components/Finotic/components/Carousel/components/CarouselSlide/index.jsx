@@ -1,6 +1,5 @@
 import { Carousel } from "@mantine/carousel";
 import { Container, Image, Stack, Text, Title } from "@mantine/core";
-import { IconCircleDashed } from "@tabler/icons";
 export function CarouselSlide(props) {
   const { image, title, subtitle } = props.slide;
   return (
@@ -10,7 +9,7 @@ export function CarouselSlide(props) {
         <Image my={20} src={image} width={"100%"} />
       </Container>
       <Stack spacing={"xs"}>
-        <Title   order={1}>{title}</Title>
+        <Title order={1}>{title}</Title>
         <Text c={"dimmed"}>{subtitle}</Text>
       </Stack>
     </Carousel.Slide>
