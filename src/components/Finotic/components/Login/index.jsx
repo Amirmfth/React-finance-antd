@@ -29,7 +29,7 @@ export function Login(props) {
   };
   return (
     <Flex h={"100%"} direction={"column"} justify="space-between">
-      <Center mt={50} >
+      <Center mt={"auto"} >
         <form>
           <Stack>
             <Title order={2}>Welcome back!</Title>
