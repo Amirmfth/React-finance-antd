@@ -29,22 +29,21 @@ export function Login(props) {
   };
   return (
     <Flex h={"100%"} direction={"column"} justify="space-between">
-      <Center mt={"auto"} >
-        <form>
+      <Center my={"auto"} >
+        <form style={{width: "50%"}}>
           <Stack>
             <Title order={2}>Welcome back!</Title>
             <Text mb={"md"} c="dimmed">
               Start managing your finance faster and better
             </Text>
             <TextInput
-              style={{ backgroundColor: "#F5F7F9" }}
-              radius="md"
+              style={{ backgroundColor: "#F5F7F9" , borderRadius: "5px" }}
               variant="unstyled"
               icon={<IconMail size={14} style={loginIconStyle} />}
               placeholder="you@example.com"
             />
             <PasswordInput
-              style={{ backgroundColor: "#F5F7F9" }}
+              style={{ backgroundColor: "#F5F7F9" , borderRadius: "5px"}}
               radius="md"
               variant="unstyled"
               icon={<IconLock size={14} style={loginIconStyle} />}
@@ -58,7 +57,7 @@ export function Login(props) {
                 color={"dark"}
                 style={{ borderColor: "lightgray" }}
                 px={35}
-                leftIcon={<IconBrandGoogle size={18} style={{color: "#D9480F"}} />}
+                leftIcon={<IconBrandGoogle size={18} style={{color: "#D9480F" , borderRadius: "5px"}} />}
                 variant="outline"
               >
                 Google

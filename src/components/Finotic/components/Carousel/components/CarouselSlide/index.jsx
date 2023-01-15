@@ -7,10 +7,10 @@ export function CarouselSlide(props) {
     <Carousel.Slide>
       <Title fs={"italic"} variant="gradient" gradient={{from: 'indigo.9' , to: 'yellow.9', deg: 45}} order={3}>FINOTIC</Title>
       <Container>
-        <Image my={20} src={image} width={330} />
+        <Image my={20} src={image} width={"100%"} />
       </Container>
-      <Stack mb={30} spacing={"xs"}>
-        <Title   order={2}>{title}</Title>
+      <Stack spacing={"xs"}>
+        <Title   order={1}>{title}</Title>
         <Text c={"dimmed"}>{subtitle}</Text>
       </Stack>
     </Carousel.Slide>
